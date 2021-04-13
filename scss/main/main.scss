@@ -1,0 +1,62 @@
+// header - scss
+html {
+    scroll-behavior: smooth;
+  }
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    background-color: #F6F8F9;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .logo{
+        font-size: 13px;
+        color:#FA6980;
+        text-transform: uppercase;
+        margin-left: 20px;
+        font-family: 'Montserrat';
+        @media screen and (max-width: 768px){
+            display:flex;
+            justify-content:center;
+            align-items: center;
+        }
+    }
+    .nav-img{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    .navigation{
+    .nav-ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right:40px;
+        @media screen and (max-width: 768px) {
+            display:none;
+        }
+    .nav-li {
+        color: inherit;
+    .nav-a{
+        font-size: 11px;
+        color:#343638;
+        text-transform: uppercase;
+        margin-top: 19px;
+        margin-left: 27px;
+        font-family: 'Montserrat';
+        @include hover-effect (all, 0.5s, linear, 0.2s);
+            &:hover{
+                color:#FA6980;
+            }
+    }
+
+    }
+    }
+}
+    .img1{
+        margin-right: 20px;
+    }
+}
+}
