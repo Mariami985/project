@@ -1,8 +1,8 @@
 // header - scss
-html {
-    scroll-behavior: smooth;
-  }
 .container{
+    max-width:1180px;
+    width:100%;
+.container1{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,6 +11,7 @@ html {
     background-color: #F6F8F9;
     padding-top: 10px;
     padding-bottom: 10px;
+    z-index: 9999999999999999;
 
     .logo{
         font-size: 13px;
@@ -18,6 +19,10 @@ html {
         text-transform: uppercase;
         margin-left: 20px;
         font-family: 'Montserrat';
+        font-weight: 600;
+        &:hover{
+            transform: scale(1.05);
+        }
         // @media screen and (max-width: 768px){
         //     display:flex;
         //     justify-content:center;
@@ -28,35 +33,41 @@ html {
         align-items: center;
         display: flex;
         justify-content: center;
-    .navigation{
-    .nav-ul{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right:40px;
-        @media screen and (max-width: 768px) {
-            display:none;
-        }
-    .nav-li {
-        color: inherit;
-    .nav-a{
-        font-size: 11px;
-        color:#343638;
-        text-transform: uppercase;
-        margin-top: 19px;
-        margin-left: 27px;
-        font-family: 'Montserrat';
-        @include hover-effect (all, 0.5s, linear, 0.2s);
-            &:hover{
-                color:#FA6980;
-            }
-    }
+        .navigation{
+            .nav-ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right:40px;
+                @media screen and (max-width: 768px) {
+                    display:none;
+                }
+                    .nav-li {
+                            .nav-a{
+                                font-size: 11px;
+                                color:#343638;
+                                text-transform: uppercase;
+                                margin-top: 19px;
+                                margin-left: 27px;
+                                font-family: 'Montserrat';
+                                font-weight: 600;
+                                transition:all, 0.5s, linear, 0.5s;
+                                    &:hover{
+                                        color:#FA6980;
+                                        
+                                    }
+                            }
 
-    }
-    }
-}
-    .img1{
-        margin-right: 20px;
-    }
+                    }
+                }
+            }
+            .img1{
+                margin-right: 20px;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.05);
+                }
+                }
+     }
 }
 }

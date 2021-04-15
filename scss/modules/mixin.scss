@@ -1,6 +1,0 @@
-@mixin hover-effect ($property, $duration, $type, $delay){
-    transition-property: $property;
-    transition-duration: $duration;
-    transition-timing-function: $type;
-    transition-delay: $delay;
-    }
