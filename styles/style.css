@@ -59,10 +59,10 @@ html {
   font-style: normal;
   font-display: swap; }
 
-.container {
-  max-width: 1180px;
-  width: 100%; }
-  .container .container1 {
+.header-container {
+  width: 100%;
+  margin: 0 auto; }
+  .header-container .container1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,28 +72,28 @@ html {
     padding-top: 10px;
     padding-bottom: 10px;
     z-index: 9999999999999999; }
-    .container .container1 .logo {
+    .header-container .container1 .logo {
       font-size: 13px;
       color: #FA6980;
       text-transform: uppercase;
       margin-left: 20px;
       font-family: 'Montserrat';
       font-weight: 600; }
-      .container .container1 .logo:hover {
+      .header-container .container1 .logo:hover {
         transform: scale(1.05); }
-    .container .container1 .nav-img {
+    .header-container .container1 .nav-img {
       align-items: center;
       display: flex;
       justify-content: center; }
-      .container .container1 .nav-img .navigation .nav-ul {
+      .header-container .container1 .nav-img .navigation .nav-ul {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-right: 40px; }
         @media screen and (max-width: 768px) {
-          .container .container1 .nav-img .navigation .nav-ul {
+          .header-container .container1 .nav-img .navigation .nav-ul {
             display: none; } }
-        .container .container1 .nav-img .navigation .nav-ul .nav-li .nav-a {
+        .header-container .container1 .nav-img .navigation .nav-ul .nav-li .nav-a {
           font-size: 11px;
           color: #343638;
           text-transform: uppercase;
@@ -102,97 +102,117 @@ html {
           font-family: 'Montserrat';
           font-weight: 600;
           transition: all, 0.5s, linear, 0.5s; }
-          .container .container1 .nav-img .navigation .nav-ul .nav-li .nav-a:hover {
+          .header-container .container1 .nav-img .navigation .nav-ul .nav-li .nav-a:hover {
             color: #FA6980; }
-      .container .container1 .nav-img .img1 {
+      .header-container .container1 .nav-img .img1 {
         margin-right: 20px;
         cursor: pointer; }
-        .container .container1 .nav-img .img1:hover {
+        .header-container .container1 .nav-img .img1:hover {
           transform: scale(1.05); }
 
-.container {
-  max-width: 1180px;
-  width: 100%; }
-  .container .section-container {
-    display: flex;
-    position: relative;
-    height: 600px; }
-    .container .section-container .bn-wraper {
-      position: absolute;
-      width: 60%;
-      height: 100%; }
-      .container .section-container .bn-wraper .bn-img {
+.section-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  height: 600px; }
+  @media screen and (max-width: 768px) {
+    .section-container {
+      height: 100%; } }
+  .section-container .section-container1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55%;
+    height: 100%; }
+    @media screen and (max-width: 768px) {
+      .section-container .section-container1 {
         width: 100%;
-        height: 100%;
-        object-fit: cover; }
-      @media screen and (max-width: 768px) {
-        .container .section-container .bn-wraper {
-          width: 100%; } }
-    .container .section-container .text-wraper {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: relative;
+        height: 55%; } }
+    .section-container .section-container1 .bn-img {
       width: 100%;
-      margin: 0 auto;
-      padding-left: 40px;
-      padding-right: 20px; }
+      height: 100%;
+      object-fit: cover; }
+  .section-container .text-wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px; }
+    @media screen and (max-width: 768px) {
+      .section-container .text-wraper {
+        flex-direction: column;
+        padding-top: 80px; } }
+    @media screen and (max-width: 768px) {
+      .section-container .text-wraper .left-block {
+        max-width: 95%;
+        margin-top: 81px;
+        margin-bottom: 80px; } }
+    .section-container .text-wraper .left-block .left-h3 {
+      max-width: 600px;
+      width: 100%; }
+      @media screen and (max-width: 1120px) {
+        .section-container .text-wraper .left-block .left-h3 {
+          max-width: 570px;
+          width: 100%; } }
+      @media screen and (max-width: 1090px) {
+        .section-container .text-wraper .left-block .left-h3 {
+          max-width: 500px;
+          width: 100%; } }
+      @media screen and (max-width: 1020px) {
+        .section-container .text-wraper .left-block .left-h3 {
+          max-width: 480px;
+          width: 100%; } }
+      @media screen and (max-width: 985px) {
+        .section-container .text-wraper .left-block .left-h3 {
+          max-width: 460px;
+          width: 100%; } }
+      @media screen and (max-width: 955px) {
+        .section-container .text-wraper .left-block .left-h3 {
+          max-width: 430px;
+          width: 100%; } }
+      @media screen and (max-width: 930px) {
+        .section-container .text-wraper .left-block .left-h3 {
+          max-width: 410px;
+          width: 100%; } }
+      @media screen and (max-width: 865px) {
+        .section-container .text-wraper .left-block .left-h3 {
+          max-width: 390px;
+          width: 100%; } }
+      @media screen and (max-width: 840px) {
+        .section-container .text-wraper .left-block .left-h3 {
+          max-width: 370px;
+          width: 100%; } }
       @media screen and (max-width: 768px) {
-        .container .section-container .text-wraper {
-          flex-direction: column;
-          padding-top: 80px; } }
-      .container .section-container .text-wraper .left-block {
-        max-width: 600px;
-        width: 100%;
-        height: 247px; }
-        @media screen and (max-width: 1090px) {
-          .container .section-container .text-wraper .left-block {
-            max-width: 560px;
-            width: 100%; } }
+        .section-container .text-wraper .left-block .left-h3 {
+          max-width: 768px;
+          margin-top: 80px; } }
+      .section-container .text-wraper .left-block .left-h3 .text-h3 {
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 40px; }
         @media screen and (max-width: 1010px) {
-          .container .section-container .text-wraper .left-block {
-            max-width: 500px;
-            width: 100%; } }
+          .section-container .text-wraper .left-block .left-h3 .text-h3 {
+            font-size: 22px; } }
         @media screen and (max-width: 910px) {
-          .container .section-container .text-wraper .left-block {
-            max-width: 460px;
-            width: 100%; } }
+          .section-container .text-wraper .left-block .left-h3 .text-h3 {
+            font-size: 20px; } }
         @media screen and (max-width: 845px) {
-          .container .section-container .text-wraper .left-block {
-            max-width: 410px;
-            width: 100%; } }
+          .section-container .text-wraper .left-block .left-h3 .text-h3 {
+            font-size: 18px; } }
         @media screen and (max-width: 768px) {
-          .container .section-container .text-wraper .left-block {
-            max-width: 95%;
-            margin-top: 80px;
-            margin-bottom: 80px; } }
-        .container .section-container .text-wraper .left-block .left-h3 {
-          max-width: 600px;
-          width: 100%;
-          padding-bottom: 40px;
-          border-bottom: 2px solid #fff; }
-          @media screen and (max-width: 768px) {
-            .container .section-container .text-wraper .left-block .left-h3 {
-              max-width: 768px; } }
-          .container .section-container .text-wraper .left-block .left-h3 .text-h3 {
-            font-size: 24px;
-            text-transform: uppercase;
-            color: #fff;
-            font-family: 'Montserrat';
-            font-weight: bold; }
-            @media screen and (max-width: 1010px) {
-              .container .section-container .text-wraper .left-block .left-h3 .text-h3 {
-                font-size: 22px; } }
-            @media screen and (max-width: 910px) {
-              .container .section-container .text-wraper .left-block .left-h3 .text-h3 {
-                font-size: 20px; } }
-            @media screen and (max-width: 845px) {
-              .container .section-container .text-wraper .left-block .left-h3 .text-h3 {
-                font-size: 18px; } }
-            @media screen and (max-width: 768px) {
-              .container .section-container .text-wraper .left-block .left-h3 .text-h3 {
-                font-size: 24px; } }
-        .container .section-container .text-wraper .left-block .text-left .text-h4 {
+          .section-container .text-wraper .left-block .left-h3 .text-h3 {
+            font-size: 24px; } }
+      .section-container .text-wraper .left-block .left-h3 .text-left {
+        width: 100%;
+        margin-top: 40px; }
+        .section-container .text-wraper .left-block .left-h3 .text-left .text-h4 {
           font-size: 24px;
           text-transform: inherit;
           color: #fff;
@@ -203,18 +223,18 @@ html {
           padding-bottom: 10px;
           font-weight: 600; }
           @media screen and (max-width: 1010px) {
-            .container .section-container .text-wraper .left-block .text-left .text-h4 {
+            .section-container .text-wraper .left-block .left-h3 .text-left .text-h4 {
               font-size: 22px; } }
           @media screen and (max-width: 910px) {
-            .container .section-container .text-wraper .left-block .text-left .text-h4 {
+            .section-container .text-wraper .left-block .left-h3 .text-left .text-h4 {
               font-size: 20px; } }
           @media screen and (max-width: 845px) {
-            .container .section-container .text-wraper .left-block .text-left .text-h4 {
+            .section-container .text-wraper .left-block .left-h3 .text-left .text-h4 {
               font-size: 18px; } }
           @media screen and (max-width: 768px) {
-            .container .section-container .text-wraper .left-block .text-left .text-h4 {
+            .section-container .text-wraper .left-block .left-h3 .text-left .text-h4 {
               font-size: 24px; } }
-        .container .section-container .text-wraper .left-block .text-left .text-p {
+        .section-container .text-wraper .left-block .left-h3 .text-left .text-p {
           font-size: 16px;
           color: #fff;
           text-transform: inherit;
@@ -224,15 +244,15 @@ html {
           font-weight: 400;
           line-height: 20px; }
           @media screen and (max-width: 910px) {
-            .container .section-container .text-wraper .left-block .text-left .text-p {
+            .section-container .text-wraper .left-block .left-h3 .text-left .text-p {
               font-size: 14px; } }
           @media screen and (max-width: 845px) {
-            .container .section-container .text-wraper .left-block .text-left .text-p {
+            .section-container .text-wraper .left-block .left-h3 .text-left .text-p {
               font-size: 12px; } }
           @media screen and (max-width: 768px) {
-            .container .section-container .text-wraper .left-block .text-left .text-p {
+            .section-container .text-wraper .left-block .left-h3 .text-left .text-p {
               font-size: 16px; } }
-        .container .section-container .text-wraper .left-block .text-left .learn-more {
+        .section-container .text-wraper .left-block .left-h3 .text-left .learn-more {
           margin-top: 45px;
           max-width: 134px;
           width: 100%;
@@ -248,555 +268,1245 @@ html {
           letter-spacing: 1px;
           cursor: pointer;
           transition: 0.5s, linear, 0.5s; }
-          .container .section-container .text-wraper .left-block .text-left .learn-more:hover {
+          .section-container .text-wraper .left-block .left-h3 .text-left .learn-more:hover {
             transform: scale(1.05); }
-      .container .section-container .text-wraper .right-block {
-        width: 30%;
-        padding-top: 33px; }
-        @media screen and (max-width: 1125px) {
-          .container .section-container .text-wraper .right-block {
-            width: 35%; } }
-        @media screen and (max-width: 976px) {
-          .container .section-container .text-wraper .right-block {
-            width: 37%; } }
-        @media screen and (max-width: 768px) {
-          .container .section-container .text-wraper .right-block {
-            padding-top: 90px;
-            width: 95%; } }
-        .container .section-container .text-wraper .right-block .right-text {
-          max-width: 380px;
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-bottom: 2px solid #707070;
-          padding-bottom: 40px; }
-          @media screen and (max-width: 768px) {
-            .container .section-container .text-wraper .right-block .right-text {
-              padding-top: 80px;
-              max-width: 95%; } }
-          .container .section-container .text-wraper .right-block .right-text .right-h3 {
-            font-size: 24px;
-            text-transform: uppercase;
-            color: #202124;
-            font-family: 'Montserrat';
-            font-weight: bold;
-            margin-right: auto; }
-            @media screen and (max-width: 1010px) {
-              .container .section-container .text-wraper .right-block .right-text .right-h3 {
-                font-size: 22px; } }
-            @media screen and (max-width: 910px) {
-              .container .section-container .text-wraper .right-block .right-text .right-h3 {
-                font-size: 20px; } }
-            @media screen and (max-width: 845px) {
-              .container .section-container .text-wraper .right-block .right-text .right-h3 {
-                font-size: 18px; } }
-            @media screen and (max-width: 768px) {
-              .container .section-container .text-wraper .right-block .right-text .right-h3 {
-                font-size: 24px; } }
-          .container .section-container .text-wraper .right-block .right-text .arrow .left-arrow {
-            font-size: 10px;
-            color: #707070;
-            cursor: pointer;
-            margin-right: 20px; }
-            .container .section-container .text-wraper .right-block .right-text .arrow .left-arrow:hover {
-              transform: scale(1.05); }
-          .container .section-container .text-wraper .right-block .right-text .arrow .right-arrow {
-            font-size: 10px;
-            color: #202124;
-            cursor: pointer; }
-            .container .section-container .text-wraper .right-block .right-text .arrow .right-arrow:hover {
-              transform: scale(1.05); }
-        .container .section-container .text-wraper .right-block .text-right {
-          max-width: 420px;
-          width: 100%;
-          padding-top: 41px; }
-          @media screen and (max-width: 768px) {
-            .container .section-container .text-wraper .right-block .text-right {
-              max-width: 600px;
-              width: 100%;
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              padding-bottom: 80px; } }
-          @media screen and (max-width: 650px) {
-            .container .section-container .text-wraper .right-block .text-right {
-              flex-direction: column;
-              max-width: 100%; } }
-          .container .section-container .text-wraper .right-block .text-right .text-right1 {
-            max-width: 380px;
-            width: 100%; }
-            @media screen and (max-width: 768px) {
-              .container .section-container .text-wraper .right-block .text-right .text-right1 {
-                max-width: 280px;
-                width: 100%; } }
-            @media screen and (max-width: 650px) {
-              .container .section-container .text-wraper .right-block .text-right .text-right1 {
-                max-width: 100%; } }
-            .container .section-container .text-wraper .right-block .text-right .text-right1 .h3-right {
-              font-size: 16px;
-              color: #FA6980;
-              font-family: 'Montserrat';
-              font-weight: bold; }
-              @media screen and (max-width: 910px) {
-                .container .section-container .text-wraper .right-block .text-right .text-right1 .h3-right {
-                  font-size: 14px; } }
-              @media screen and (max-width: 845px) {
-                .container .section-container .text-wraper .right-block .text-right .text-right1 .h3-right {
-                  font-size: 12px; } }
-              @media screen and (max-width: 768px) {
-                .container .section-container .text-wraper .right-block .text-right .text-right1 .h3-right {
-                  font-size: 16px; } }
-            .container .section-container .text-wraper .right-block .text-right .text-right1 .h3-right2 {
-              font-size: 16px;
-              color: #202124;
-              font-family: 'Montserrat';
-              font-weight: 600;
-              margin-top: 20px;
-              margin-bottom: 10px; }
-              @media screen and (max-width: 910px) {
-                .container .section-container .text-wraper .right-block .text-right .text-right1 .h3-right2 {
-                  font-size: 14px; } }
-              @media screen and (max-width: 845px) {
-                .container .section-container .text-wraper .right-block .text-right .text-right1 .h3-right2 {
-                  font-size: 12px; } }
-              @media screen and (max-width: 768px) {
-                .container .section-container .text-wraper .right-block .text-right .text-right1 .h3-right2 {
-                  font-size: 16px; } }
-            .container .section-container .text-wraper .right-block .text-right .text-right1 .p-right {
-              font-size: 16px;
-              color: #A6ADB4;
-              font-family: 'Montserrat';
-              font-weight: 400;
-              margin-bottom: 10px;
-              text-transform: inherit;
-              font-style: italic;
-              line-height: 20px; }
-              @media screen and (max-width: 910px) {
-                .container .section-container .text-wraper .right-block .text-right .text-right1 .p-right {
-                  font-size: 14px; } }
-              @media screen and (max-width: 845px) {
-                .container .section-container .text-wraper .right-block .text-right .text-right1 .p-right {
-                  font-size: 12px; } }
-              @media screen and (max-width: 768px) {
-                .container .section-container .text-wraper .right-block .text-right .text-right1 .p-right {
-                  font-size: 16px; } }
-            .container .section-container .text-wraper .right-block .text-right .text-right1 .i-clock {
-              display: flex;
-              margin-bottom: 40px; }
-              .container .section-container .text-wraper .right-block .text-right .text-right1 .i-clock .clock {
-                font-size: 13px;
-                color: #A6ADB4;
-                margin-right: 10px; }
-              .container .section-container .text-wraper .right-block .text-right .text-right1 .i-clock .right-p {
-                font-size: 13px;
-                color: #A6ADB4;
-                font-family: 'Montserrat';
-                font-weight: 500;
-                font-style: italic; }
-          .container .section-container .text-wraper .right-block .text-right .text-right2 {
-            max-width: 380px;
-            width: 100%; }
-            @media screen and (max-width: 768px) {
-              .container .section-container .text-wraper .right-block .text-right .text-right2 {
-                max-width: 280px;
-                width: 100%; } }
-            @media screen and (max-width: 650px) {
-              .container .section-container .text-wraper .right-block .text-right .text-right2 {
-                max-width: 100%; } }
-            .container .section-container .text-wraper .right-block .text-right .text-right2 .h3-right {
-              font-size: 16px;
-              color: #FA6980;
-              font-family: 'Montserrat';
-              font-weight: bold; }
-              @media screen and (max-width: 910px) {
-                .container .section-container .text-wraper .right-block .text-right .text-right2 .h3-right {
-                  font-size: 14px; } }
-              @media screen and (max-width: 845px) {
-                .container .section-container .text-wraper .right-block .text-right .text-right2 .h3-right {
-                  font-size: 12px; } }
-              @media screen and (max-width: 768px) {
-                .container .section-container .text-wraper .right-block .text-right .text-right2 .h3-right {
-                  font-size: 16px; } }
-            .container .section-container .text-wraper .right-block .text-right .text-right2 .h3-right2 {
-              font-size: 16px;
-              color: #202124;
-              font-family: 'Montserrat';
-              font-weight: 600;
-              margin-top: 20px;
-              margin-bottom: 10px; }
-              @media screen and (max-width: 910px) {
-                .container .section-container .text-wraper .right-block .text-right .text-right2 .h3-right2 {
-                  font-size: 14px; } }
-              @media screen and (max-width: 845px) {
-                .container .section-container .text-wraper .right-block .text-right .text-right2 .h3-right2 {
-                  font-size: 12px; } }
-              @media screen and (max-width: 768px) {
-                .container .section-container .text-wraper .right-block .text-right .text-right2 .h3-right2 {
-                  font-size: 16px; } }
-            .container .section-container .text-wraper .right-block .text-right .text-right2 .p-right {
-              font-size: 16px;
-              color: #A6ADB4;
-              font-family: 'Montserrat';
-              font-weight: 400;
-              margin-bottom: 10px;
-              text-transform: inherit;
-              font-style: italic;
-              line-height: 20px; }
-              @media screen and (max-width: 910px) {
-                .container .section-container .text-wraper .right-block .text-right .text-right2 .p-right {
-                  font-size: 14px; } }
-              @media screen and (max-width: 845px) {
-                .container .section-container .text-wraper .right-block .text-right .text-right2 .p-right {
-                  font-size: 12px; } }
-              @media screen and (max-width: 768px) {
-                .container .section-container .text-wraper .right-block .text-right .text-right2 .p-right {
-                  font-size: 16px; } }
-            .container .section-container .text-wraper .right-block .text-right .text-right2 .i-clock {
-              display: flex;
-              margin-bottom: 40px; }
-              .container .section-container .text-wraper .right-block .text-right .text-right2 .i-clock .clock {
-                font-size: 13px;
-                color: #A6ADB4;
-                margin-right: 10px; }
-              .container .section-container .text-wraper .right-block .text-right .text-right2 .i-clock .right-p {
-                font-size: 13px;
-                color: #A6ADB4;
-                font-family: 'Montserrat';
-                font-weight: 500;
-                font-style: italic; }
-
-.container {
-  max-width: 1180px;
-  width: 100%; }
-  .container .section2 {
-    max-width: 1160px;
-    width: 100%;
-    margin: 0 auto; }
-    @media screen and (max-width: 768px) {
-      .container .section2 {
-        padding-top: 50%; } }
-    .container .section2 .title-h2 {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 40px;
-      margin-left: 40px; }
-      .container .section2 .title-h2 .text-h2 {
-        font-size: 24px;
-        color: #202124;
-        text-transform: uppercase;
-        font-family: 'Montserrat';
-        font-weight: bold; }
-      .container .section2 .title-h2 .arrow .left-arrow {
-        font-size: 10px;
-        color: #707070;
-        cursor: pointer;
-        margin-right: 20px; }
-        .container .section2 .title-h2 .arrow .left-arrow:hover {
-          transform: scale(1.05); }
-      .container .section2 .title-h2 .arrow .right-arrow {
-        font-size: 10px;
-        color: #202124;
-        cursor: pointer; }
-        .container .section2 .title-h2 .arrow .right-arrow:hover {
-          transform: scale(1.05); }
-    .container .section2 .box {
-      margin-top: 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center; }
-      .container .section2 .box .box1 {
-        max-width: 360px;
-        width: 100%;
-        border-radius: 6px;
-        margin-left: 40px; }
-        .container .section2 .box .box1:hover {
-          transform: scale(1.05); }
-        @media screen and (max-width: 1090px) {
-          .container .section2 .box .box1 {
-            max-width: 320px;
-            width: 100%; } }
-        @media screen and (max-width: 1020px) {
-          .container .section2 .box .box1 {
-            max-width: 300px;
-            width: 100%; } }
-        @media screen and (max-width: 950px) {
-          .container .section2 .box .box1 {
-            max-width: 280px;
-            width: 100%; } }
-        @media screen and (max-width: 890px) {
-          .container .section2 .box .box1 {
-            max-width: 260px;
-            width: 100%; } }
-        @media screen and (max-width: 820px) {
-          .container .section2 .box .box1 {
-            max-width: 240px;
-            width: 100%; } }
-        @media screen and (max-width: 768px) {
-          .container .section2 .box .box1 {
-            max-width: 360px;
-            width: 100%;
-            margin-left: 40px; } }
-        .container .section2 .box .box1 .img1 {
-          width: 100%;
-          height: 100%; }
-        .container .section2 .box .box1 .title-h4 {
-          font-size: 16px;
-          color: #202124;
-          font-weight: 600;
-          text-transform: inherit;
-          font-family: 'Montserrat';
-          margin-top: 40px;
-          margin-bottom: 10px; }
-          @media screen and (max-width: 950px) {
-            .container .section2 .box .box1 .title-h4 {
-              font-size: 14px; } }
-          @media screen and (max-width: 825px) {
-            .container .section2 .box .box1 .title-h4 {
-              font-size: 12px; } }
-          @media screen and (max-width: 768px) {
-            .container .section2 .box .box1 .title-h4 {
-              font-size: 16px; } }
-        .container .section2 .box .box1 .title-p {
-          font-size: 13px;
-          color: #A6ADB4;
-          font-weight: 600;
-          text-transform: inherit;
-          font-family: 'Montserrat';
-          font-style: italic;
-          margin-bottom: 10px; }
-          @media screen and (max-width: 950px) {
-            .container .section2 .box .box1 .title-p {
-              font-size: 11px; } }
-          @media screen and (max-width: 820px) {
-            .container .section2 .box .box1 .title-p {
-              font-size: 11px; } }
-          @media screen and (max-width: 768px) {
-            .container .section2 .box .box1 .title-p {
-              font-size: 13px; } }
-        .container .section2 .box .box1 .i-clock {
-          display: flex;
-          margin-bottom: 40px; }
-          .container .section2 .box .box1 .i-clock .clock {
-            font-size: 13px;
-            color: #A6ADB4;
-            margin-right: 10px; }
-          .container .section2 .box .box1 .i-clock .right-p {
-            font-size: 13px;
-            color: #A6ADB4;
-            font-family: 'Montserrat';
-            font-weight: 500;
-            font-style: italic; }
-      .container .section2 .box .box2 {
-        max-width: 360px;
-        width: 100%;
-        border-radius: 6px;
-        margin-left: 40px; }
-        .container .section2 .box .box2:hover {
-          transform: scale(1.05); }
-        @media screen and (max-width: 1090px) {
-          .container .section2 .box .box2 {
-            max-width: 320px;
-            width: 100%; } }
-        @media screen and (max-width: 1020px) {
-          .container .section2 .box .box2 {
-            max-width: 300px;
-            width: 100%; } }
-        @media screen and (max-width: 950px) {
-          .container .section2 .box .box2 {
-            max-width: 280px;
-            width: 100%; } }
-        @media screen and (max-width: 890px) {
-          .container .section2 .box .box2 {
-            max-width: 260px;
-            width: 100%; } }
-        @media screen and (max-width: 820px) {
-          .container .section2 .box .box2 {
-            max-width: 240px;
-            width: 100%; } }
-        @media screen and (max-width: 768px) {
-          .container .section2 .box .box2 {
-            max-width: 360px;
-            width: 100%;
-            margin-left: 40px; } }
-        .container .section2 .box .box2 .img1 {
-          width: 100%;
-          height: 100%; }
-        .container .section2 .box .box2 .title-h4 {
-          font-size: 16px;
-          color: #202124;
-          font-weight: 600;
-          text-transform: inherit;
-          font-family: 'Montserrat';
-          margin-top: 40px;
-          margin-bottom: 10px; }
-          @media screen and (max-width: 950px) {
-            .container .section2 .box .box2 .title-h4 {
-              font-size: 14px; } }
-          @media screen and (max-width: 825px) {
-            .container .section2 .box .box2 .title-h4 {
-              font-size: 12px; } }
-          @media screen and (max-width: 768px) {
-            .container .section2 .box .box2 .title-h4 {
-              font-size: 16px; } }
-        .container .section2 .box .box2 .title-p {
-          font-size: 13px;
-          color: #A6ADB4;
-          font-weight: 600;
-          text-transform: inherit;
-          font-family: 'Montserrat';
-          font-style: italic;
-          margin-bottom: 10px; }
-          @media screen and (max-width: 950px) {
-            .container .section2 .box .box2 .title-p {
-              font-size: 11px; } }
-          @media screen and (max-width: 820px) {
-            .container .section2 .box .box2 .title-p {
-              font-size: 11px; } }
-          @media screen and (max-width: 768px) {
-            .container .section2 .box .box2 .title-p {
-              font-size: 13px; } }
-        .container .section2 .box .box2 .i-clock {
-          display: flex;
-          margin-bottom: 40px; }
-          .container .section2 .box .box2 .i-clock .clock {
-            font-size: 13px;
-            color: #A6ADB4;
-            margin-right: 10px; }
-          .container .section2 .box .box2 .i-clock .right-p {
-            font-size: 13px;
-            color: #A6ADB4;
-            font-family: 'Montserrat';
-            font-weight: 500;
-            font-style: italic; }
-      .container .section2 .box .box3 {
-        max-width: 360px;
-        width: 100%;
-        border-radius: 6px;
-        margin-left: 40px; }
-        .container .section2 .box .box3:hover {
-          transform: scale(1.05); }
-        @media screen and (max-width: 1090px) {
-          .container .section2 .box .box3 {
-            max-width: 320px;
-            width: 100%; } }
-        @media screen and (max-width: 1020px) {
-          .container .section2 .box .box3 {
-            max-width: 300px;
-            width: 100%; } }
-        @media screen and (max-width: 950px) {
-          .container .section2 .box .box3 {
-            max-width: 280px;
-            width: 100%; } }
-        @media screen and (max-width: 890px) {
-          .container .section2 .box .box3 {
-            max-width: 260px;
-            width: 100%; } }
-        @media screen and (max-width: 820px) {
-          .container .section2 .box .box3 {
-            max-width: 240px;
-            width: 100%; } }
-        @media screen and (max-width: 768px) {
-          .container .section2 .box .box3 {
-            display: none; } }
-        .container .section2 .box .box3 .img1 {
-          width: 100%;
-          height: 100%; }
-        .container .section2 .box .box3 .title-h4 {
-          font-size: 16px;
-          color: #202124;
-          font-weight: 600;
-          text-transform: inherit;
-          font-family: 'Montserrat';
-          margin-top: 40px;
-          margin-bottom: 10px; }
-          @media screen and (max-width: 950px) {
-            .container .section2 .box .box3 .title-h4 {
-              font-size: 14px; } }
-          @media screen and (max-width: 825px) {
-            .container .section2 .box .box3 .title-h4 {
-              font-size: 12px; } }
-          @media screen and (max-width: 768px) {
-            .container .section2 .box .box3 .title-h4 {
-              font-size: 16px; } }
-        .container .section2 .box .box3 .title-p {
-          font-size: 13px;
-          color: #A6ADB4;
-          font-weight: 600;
-          text-transform: inherit;
-          font-family: 'Montserrat';
-          font-style: italic;
-          margin-bottom: 10px; }
-          @media screen and (max-width: 950px) {
-            .container .section2 .box .box3 .title-p {
-              font-size: 11px; } }
-          @media screen and (max-width: 820px) {
-            .container .section2 .box .box3 .title-p {
-              font-size: 11px; } }
-          @media screen and (max-width: 768px) {
-            .container .section2 .box .box3 .title-p {
-              font-size: 13px; } }
-        .container .section2 .box .box3 .i-clock {
-          display: flex;
-          margin-bottom: 40px; }
-          .container .section2 .box .box3 .i-clock .clock {
-            font-size: 13px;
-            color: #A6ADB4;
-            margin-right: 10px; }
-          .container .section2 .box .box3 .i-clock .right-p {
-            font-size: 13px;
-            color: #A6ADB4;
-            font-family: 'Montserrat';
-            font-weight: 500;
-            font-style: italic; }
-
-.container {
-  max-width: 1180px;
-  width: 100%; }
-  .container .section3 {
+  .section-container .right-abso {
+    display: flex;
     justify-content: center;
-    align-self: flex-end; }
-  .container .title-h3 {
+    align-items: center;
+    width: 30%;
+    height: 100%; }
+    @media screen and (max-width: 1090px) {
+      .section-container .right-abso {
+        width: 34%; } }
+    @media screen and (max-width: 1020px) {
+      .section-container .right-abso {
+        width: 35%; } }
+    @media screen and (max-width: 985px) {
+      .section-container .right-abso {
+        width: 37%; } }
+    @media screen and (max-width: 955px) {
+      .section-container .right-abso {
+        width: 40%; } }
+    @media screen and (max-width: 930px) {
+      .section-container .right-abso {
+        width: 40%; } }
+    @media screen and (max-width: 865px) {
+      .section-container .right-abso {
+        width: 40%; } }
+    @media screen and (max-width: 840px) {
+      .section-container .right-abso {
+        width: 40%; } }
+    @media screen and (max-width: 768px) {
+      .section-container .right-abso {
+        width: 100%;
+        padding-top: 80px; } }
+    .section-container .right-abso .right-block {
+      max-width: 600px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      @media screen and (max-width: 768px) {
+        .section-container .right-abso .right-block {
+          max-width: 95%; } }
+      .section-container .right-abso .right-block .right-text {
+        max-width: 380px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #ebeded; }
+        @media screen and (max-width: 768px) {
+          .section-container .right-abso .right-block .right-text {
+            max-width: 100%; } }
+        .section-container .right-abso .right-block .right-text .right-h3 {
+          font-size: 24px;
+          text-transform: uppercase;
+          color: #202124;
+          font-family: 'Montserrat';
+          font-weight: bold;
+          margin-right: auto; }
+          @media screen and (max-width: 1010px) {
+            .section-container .right-abso .right-block .right-text .right-h3 {
+              font-size: 22px; } }
+          @media screen and (max-width: 910px) {
+            .section-container .right-abso .right-block .right-text .right-h3 {
+              font-size: 20px; } }
+          @media screen and (max-width: 845px) {
+            .section-container .right-abso .right-block .right-text .right-h3 {
+              font-size: 18px; } }
+          @media screen and (max-width: 768px) {
+            .section-container .right-abso .right-block .right-text .right-h3 {
+              font-size: 24px; } }
+        .section-container .right-abso .right-block .right-text .arrow .left-arrow {
+          font-size: 10px;
+          color: #707070;
+          cursor: pointer;
+          margin-right: 20px; }
+          .section-container .right-abso .right-block .right-text .arrow .left-arrow:hover {
+            transform: scale(1.05); }
+        .section-container .right-abso .right-block .right-text .arrow .right-arrow {
+          font-size: 10px;
+          color: #202124;
+          cursor: pointer; }
+          .section-container .right-abso .right-block .right-text .arrow .right-arrow:hover {
+            transform: scale(1.05); }
+      @media screen and (max-width: 768px) {
+        .section-container .right-abso .right-block .text-right {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-bottom: 80px; } }
+      @media screen and (max-width: 650px) {
+        .section-container .right-abso .right-block .text-right {
+          flex-direction: column;
+          max-width: 100%; } }
+      .section-container .right-abso .right-block .text-right .text-right1 {
+        max-width: 380px;
+        width: 100%;
+        margin-top: 41px; }
+        @media screen and (max-width: 768px) {
+          .section-container .right-abso .right-block .text-right .text-right1 {
+            max-width: 280px;
+            width: 100%; } }
+        @media screen and (max-width: 650px) {
+          .section-container .right-abso .right-block .text-right .text-right1 {
+            max-width: 100%; } }
+        .section-container .right-abso .right-block .text-right .text-right1 .h3-right {
+          font-size: 16px;
+          color: #FA6980;
+          font-family: 'Montserrat';
+          font-weight: bold; }
+          @media screen and (max-width: 910px) {
+            .section-container .right-abso .right-block .text-right .text-right1 .h3-right {
+              font-size: 14px; } }
+          @media screen and (max-width: 845px) {
+            .section-container .right-abso .right-block .text-right .text-right1 .h3-right {
+              font-size: 12px; } }
+          @media screen and (max-width: 768px) {
+            .section-container .right-abso .right-block .text-right .text-right1 .h3-right {
+              font-size: 16px; } }
+        .section-container .right-abso .right-block .text-right .text-right1 .h3-right2 {
+          font-size: 16px;
+          color: #202124;
+          font-family: 'Montserrat';
+          font-weight: 600;
+          margin-top: 20px;
+          margin-bottom: 10px; }
+          @media screen and (max-width: 910px) {
+            .section-container .right-abso .right-block .text-right .text-right1 .h3-right2 {
+              font-size: 14px; } }
+          @media screen and (max-width: 845px) {
+            .section-container .right-abso .right-block .text-right .text-right1 .h3-right2 {
+              font-size: 12px; } }
+          @media screen and (max-width: 768px) {
+            .section-container .right-abso .right-block .text-right .text-right1 .h3-right2 {
+              font-size: 16px; } }
+        .section-container .right-abso .right-block .text-right .text-right1 .p-right {
+          font-size: 16px;
+          color: #A6ADB4;
+          font-family: 'Montserrat';
+          font-weight: 400;
+          margin-bottom: 10px;
+          text-transform: inherit;
+          font-style: italic;
+          line-height: 20px; }
+          @media screen and (max-width: 910px) {
+            .section-container .right-abso .right-block .text-right .text-right1 .p-right {
+              font-size: 14px; } }
+          @media screen and (max-width: 845px) {
+            .section-container .right-abso .right-block .text-right .text-right1 .p-right {
+              font-size: 12px; } }
+          @media screen and (max-width: 768px) {
+            .section-container .right-abso .right-block .text-right .text-right1 .p-right {
+              font-size: 16px; } }
+        .section-container .right-abso .right-block .text-right .text-right1 .i-clock {
+          display: flex;
+          margin-bottom: 40px; }
+          .section-container .right-abso .right-block .text-right .text-right1 .i-clock .clock {
+            font-size: 13px;
+            color: #A6ADB4;
+            margin-right: 10px; }
+          .section-container .right-abso .right-block .text-right .text-right1 .i-clock .right-p {
+            font-size: 13px;
+            color: #A6ADB4;
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-style: italic; }
+      .section-container .right-abso .right-block .text-right .text-right2 {
+        max-width: 380px;
+        width: 100%;
+        margin-top: 41px; }
+        @media screen and (max-width: 768px) {
+          .section-container .right-abso .right-block .text-right .text-right2 {
+            max-width: 280px;
+            width: 100%; } }
+        @media screen and (max-width: 650px) {
+          .section-container .right-abso .right-block .text-right .text-right2 {
+            max-width: 100%; } }
+        .section-container .right-abso .right-block .text-right .text-right2 .h3-right {
+          font-size: 16px;
+          color: #FA6980;
+          font-family: 'Montserrat';
+          font-weight: bold; }
+          @media screen and (max-width: 910px) {
+            .section-container .right-abso .right-block .text-right .text-right2 .h3-right {
+              font-size: 14px; } }
+          @media screen and (max-width: 845px) {
+            .section-container .right-abso .right-block .text-right .text-right2 .h3-right {
+              font-size: 12px; } }
+          @media screen and (max-width: 768px) {
+            .section-container .right-abso .right-block .text-right .text-right2 .h3-right {
+              font-size: 16px; } }
+        .section-container .right-abso .right-block .text-right .text-right2 .h3-right2 {
+          font-size: 16px;
+          color: #202124;
+          font-family: 'Montserrat';
+          font-weight: 600;
+          margin-top: 20px;
+          margin-bottom: 10px; }
+          @media screen and (max-width: 910px) {
+            .section-container .right-abso .right-block .text-right .text-right2 .h3-right2 {
+              font-size: 14px; } }
+          @media screen and (max-width: 845px) {
+            .section-container .right-abso .right-block .text-right .text-right2 .h3-right2 {
+              font-size: 12px; } }
+          @media screen and (max-width: 768px) {
+            .section-container .right-abso .right-block .text-right .text-right2 .h3-right2 {
+              font-size: 16px; } }
+        .section-container .right-abso .right-block .text-right .text-right2 .p-right {
+          font-size: 16px;
+          color: #A6ADB4;
+          font-family: 'Montserrat';
+          font-weight: 400;
+          margin-bottom: 10px;
+          text-transform: inherit;
+          font-style: italic;
+          line-height: 20px; }
+          @media screen and (max-width: 910px) {
+            .section-container .right-abso .right-block .text-right .text-right2 .p-right {
+              font-size: 14px; } }
+          @media screen and (max-width: 845px) {
+            .section-container .right-abso .right-block .text-right .text-right2 .p-right {
+              font-size: 12px; } }
+          @media screen and (max-width: 768px) {
+            .section-container .right-abso .right-block .text-right .text-right2 .p-right {
+              font-size: 16px; } }
+        .section-container .right-abso .right-block .text-right .text-right2 .i-clock {
+          display: flex;
+          margin-bottom: 40px; }
+          .section-container .right-abso .right-block .text-right .text-right2 .i-clock .clock {
+            font-size: 13px;
+            color: #A6ADB4;
+            margin-right: 10px; }
+          .section-container .right-abso .right-block .text-right .text-right2 .i-clock .right-p {
+            font-size: 13px;
+            color: #A6ADB4;
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-style: italic; }
+
+.section-wraper {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto; }
+  .section-wraper .title-h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 40px; }
+    .section-wraper .title-h2 .text-h2 {
+      font-size: 24px;
+      color: #202124;
+      text-transform: uppercase;
+      font-family: 'Montserrat';
+      font-weight: bold; }
+      @media screen and (max-width: 420px) {
+        .section-wraper .title-h2 .text-h2 {
+          font-size: 20px; } }
+    .section-wraper .title-h2 .arrow .left-arrow {
+      font-size: 10px;
+      color: #707070;
+      cursor: pointer;
+      margin-right: 20px; }
+      .section-wraper .title-h2 .arrow .left-arrow:hover {
+        transform: scale(1.05); }
+    .section-wraper .title-h2 .arrow .right-arrow {
+      font-size: 10px;
+      color: #202124;
+      cursor: pointer; }
+      .section-wraper .title-h2 .arrow .right-arrow:hover {
+        transform: scale(1.05); }
+  .section-wraper .box {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media screen and (max-width: 670px) {
+      .section-wraper .box {
+        flex-direction: column;
+        align-items: flex-start; } }
+    .section-wraper .box .box1 {
+      max-width: 360px;
+      width: 100%;
+      border-radius: 6px;
+      margin-left: 40px; }
+      @media screen and (max-width: 1090px) {
+        .section-wraper .box .box1 {
+          max-width: 320px;
+          width: 100%; } }
+      @media screen and (max-width: 1020px) {
+        .section-wraper .box .box1 {
+          max-width: 300px;
+          width: 100%; } }
+      @media screen and (max-width: 950px) {
+        .section-wraper .box .box1 {
+          max-width: 280px;
+          width: 100%; } }
+      @media screen and (max-width: 890px) {
+        .section-wraper .box .box1 {
+          max-width: 260px;
+          width: 100%; } }
+      @media screen and (max-width: 820px) {
+        .section-wraper .box .box1 {
+          max-width: 240px;
+          width: 100%; } }
+      @media screen and (max-width: 768px) {
+        .section-wraper .box .box1 {
+          max-width: 360px;
+          width: 100%;
+          margin-left: 40px; } }
+      @media screen and (max-width: 420px) {
+        .section-wraper .box .box1 {
+          width: 85%; } }
+      .section-wraper .box .box1 .img1 {
+        width: 100%;
+        transition: all .2s;
+        height: 100%;
+        cursor: pointer; }
+        .section-wraper .box .box1 .img1:hover {
+          transform: scale(1.05); }
+        @media screen and (max-width: 420px) {
+          .section-wraper .box .box1 .img1 {
+            transition: all .2s;
+            cursor: pointer; }
+            .section-wraper .box .box1 .img1:hover {
+              transform: scale(0.9); } }
+      .section-wraper .box .box1 .title-h4 {
+        font-size: 16px;
+        color: #202124;
+        font-weight: 600;
+        text-transform: inherit;
+        font-family: 'Montserrat';
+        margin-top: 40px;
+        margin-bottom: 10px;
+        cursor: pointer; }
+        .section-wraper .box .box1 .title-h4:hover {
+          transform: scale(1.05); }
+        @media screen and (max-width: 950px) {
+          .section-wraper .box .box1 .title-h4 {
+            font-size: 14px; } }
+        @media screen and (max-width: 825px) {
+          .section-wraper .box .box1 .title-h4 {
+            font-size: 12px; } }
+        @media screen and (max-width: 768px) {
+          .section-wraper .box .box1 .title-h4 {
+            font-size: 16px; } }
+        @media screen and (max-width: 420px) {
+          .section-wraper .box .box1 .title-h4 {
+            font-size: 14px;
+            transition: all .2s;
+            cursor: pointer; }
+            .section-wraper .box .box1 .title-h4:hover {
+              transform: scale(0.9); } }
+      .section-wraper .box .box1 .title-p {
+        font-size: 13px;
+        color: #A6ADB4;
+        font-weight: 600;
+        text-transform: inherit;
+        font-family: 'Montserrat';
+        font-style: italic;
+        margin-bottom: 10px;
+        cursor: pointer; }
+        .section-wraper .box .box1 .title-p:hover {
+          transform: scale(1.05); }
+        @media screen and (max-width: 950px) {
+          .section-wraper .box .box1 .title-p {
+            font-size: 11px; } }
+        @media screen and (max-width: 820px) {
+          .section-wraper .box .box1 .title-p {
+            font-size: 11px; } }
+        @media screen and (max-width: 768px) {
+          .section-wraper .box .box1 .title-p {
+            font-size: 13px; } }
+        @media screen and (max-width: 420px) {
+          .section-wraper .box .box1 .title-p {
+            font-size: 11px;
+            transition: all .2s;
+            cursor: pointer; }
+            .section-wraper .box .box1 .title-p:hover {
+              transform: scale(0.9); } }
+      .section-wraper .box .box1 .i-clock {
+        display: flex;
+        margin-bottom: 40px; }
+        .section-wraper .box .box1 .i-clock .clock {
+          font-size: 13px;
+          color: #A6ADB4;
+          margin-right: 10px; }
+        .section-wraper .box .box1 .i-clock .right-p {
+          font-size: 13px;
+          color: #A6ADB4;
+          font-family: 'Montserrat';
+          font-weight: 500;
+          font-style: italic; }
+    .section-wraper .box .box2 {
+      max-width: 360px;
+      width: 100%;
+      border-radius: 6px;
+      margin-left: 40px; }
+      @media screen and (max-width: 1090px) {
+        .section-wraper .box .box2 {
+          max-width: 320px;
+          width: 100%; } }
+      @media screen and (max-width: 1020px) {
+        .section-wraper .box .box2 {
+          max-width: 300px;
+          width: 100%; } }
+      @media screen and (max-width: 950px) {
+        .section-wraper .box .box2 {
+          max-width: 280px;
+          width: 100%; } }
+      @media screen and (max-width: 890px) {
+        .section-wraper .box .box2 {
+          max-width: 260px;
+          width: 100%; } }
+      @media screen and (max-width: 820px) {
+        .section-wraper .box .box2 {
+          max-width: 240px;
+          width: 100%; } }
+      @media screen and (max-width: 768px) {
+        .section-wraper .box .box2 {
+          max-width: 360px;
+          width: 100%;
+          margin-left: 40px; } }
+      @media screen and (max-width: 420px) {
+        .section-wraper .box .box2 {
+          width: 85%; } }
+      .section-wraper .box .box2 .img1 {
+        width: 100%;
+        height: 100%;
+        transition: all .2s;
+        cursor: pointer; }
+        .section-wraper .box .box2 .img1:hover {
+          transform: scale(1.05); }
+        @media screen and (max-width: 420px) {
+          .section-wraper .box .box2 .img1 {
+            transition: all .2s;
+            cursor: pointer; }
+            .section-wraper .box .box2 .img1:hover {
+              transform: scale(0.9); } }
+      .section-wraper .box .box2 .title-h4 {
+        font-size: 16px;
+        color: #202124;
+        font-weight: 600;
+        text-transform: inherit;
+        font-family: 'Montserrat';
+        margin-top: 40px;
+        margin-bottom: 10px;
+        cursor: pointer; }
+        .section-wraper .box .box2 .title-h4:hover {
+          transform: scale(1.05); }
+        @media screen and (max-width: 950px) {
+          .section-wraper .box .box2 .title-h4 {
+            font-size: 14px; } }
+        @media screen and (max-width: 825px) {
+          .section-wraper .box .box2 .title-h4 {
+            font-size: 12px; } }
+        @media screen and (max-width: 768px) {
+          .section-wraper .box .box2 .title-h4 {
+            font-size: 16px; } }
+        @media screen and (max-width: 420px) {
+          .section-wraper .box .box2 .title-h4 {
+            font-size: 14px;
+            transition: all .2s;
+            cursor: pointer; }
+            .section-wraper .box .box2 .title-h4:hover {
+              transform: scale(0.9); } }
+      .section-wraper .box .box2 .title-p {
+        font-size: 13px;
+        color: #A6ADB4;
+        font-weight: 600;
+        text-transform: inherit;
+        font-family: 'Montserrat';
+        font-style: italic;
+        margin-bottom: 10px;
+        cursor: pointer; }
+        .section-wraper .box .box2 .title-p:hover {
+          transform: scale(1.05); }
+        @media screen and (max-width: 950px) {
+          .section-wraper .box .box2 .title-p {
+            font-size: 11px; } }
+        @media screen and (max-width: 820px) {
+          .section-wraper .box .box2 .title-p {
+            font-size: 11px; } }
+        @media screen and (max-width: 768px) {
+          .section-wraper .box .box2 .title-p {
+            font-size: 13px; } }
+        @media screen and (max-width: 420px) {
+          .section-wraper .box .box2 .title-p {
+            font-size: 11px;
+            transition: all .2s;
+            cursor: pointer; }
+            .section-wraper .box .box2 .title-p:hover {
+              transform: scale(0.9); } }
+      .section-wraper .box .box2 .i-clock {
+        display: flex;
+        margin-bottom: 40px; }
+        .section-wraper .box .box2 .i-clock .clock {
+          font-size: 13px;
+          color: #A6ADB4;
+          margin-right: 10px; }
+        .section-wraper .box .box2 .i-clock .right-p {
+          font-size: 13px;
+          color: #A6ADB4;
+          font-family: 'Montserrat';
+          font-weight: 500;
+          font-style: italic; }
+    .section-wraper .box .box3 {
+      max-width: 360px;
+      width: 100%;
+      border-radius: 6px;
+      margin-left: 40px; }
+      @media screen and (max-width: 1090px) {
+        .section-wraper .box .box3 {
+          max-width: 320px;
+          width: 100%; } }
+      @media screen and (max-width: 1020px) {
+        .section-wraper .box .box3 {
+          max-width: 300px;
+          width: 100%; } }
+      @media screen and (max-width: 950px) {
+        .section-wraper .box .box3 {
+          max-width: 280px;
+          width: 100%; } }
+      @media screen and (max-width: 890px) {
+        .section-wraper .box .box3 {
+          max-width: 260px;
+          width: 100%; } }
+      @media screen and (max-width: 820px) {
+        .section-wraper .box .box3 {
+          max-width: 240px;
+          width: 100%; } }
+      @media screen and (max-width: 768px) {
+        .section-wraper .box .box3 {
+          display: none; } }
+      .section-wraper .box .box3 .img1 {
+        width: 100%;
+        height: 100%;
+        transition: all .2s;
+        cursor: pointer; }
+        .section-wraper .box .box3 .img1:hover {
+          transform: scale(1.05); }
+      .section-wraper .box .box3 .title-h4 {
+        font-size: 16px;
+        color: #202124;
+        font-weight: 600;
+        text-transform: inherit;
+        font-family: 'Montserrat';
+        margin-top: 40px;
+        margin-bottom: 10px;
+        cursor: pointer; }
+        .section-wraper .box .box3 .title-h4:hover {
+          transform: scale(1.05); }
+        @media screen and (max-width: 950px) {
+          .section-wraper .box .box3 .title-h4 {
+            font-size: 14px; } }
+        @media screen and (max-width: 825px) {
+          .section-wraper .box .box3 .title-h4 {
+            font-size: 12px; } }
+        @media screen and (max-width: 768px) {
+          .section-wraper .box .box3 .title-h4 {
+            font-size: 16px; } }
+      .section-wraper .box .box3 .title-p {
+        font-size: 13px;
+        color: #A6ADB4;
+        font-weight: 600;
+        text-transform: inherit;
+        font-family: 'Montserrat';
+        font-style: italic;
+        margin-bottom: 10px;
+        cursor: pointer; }
+        .section-wraper .box .box3 .title-p:hover {
+          transform: scale(1.05); }
+        @media screen and (max-width: 950px) {
+          .section-wraper .box .box3 .title-p {
+            font-size: 11px; } }
+        @media screen and (max-width: 820px) {
+          .section-wraper .box .box3 .title-p {
+            font-size: 11px; } }
+        @media screen and (max-width: 768px) {
+          .section-wraper .box .box3 .title-p {
+            font-size: 13px; } }
+      .section-wraper .box .box3 .i-clock {
+        display: flex;
+        margin-bottom: 40px; }
+        .section-wraper .box .box3 .i-clock .clock {
+          font-size: 13px;
+          color: #A6ADB4;
+          margin-right: 10px; }
+        .section-wraper .box .box3 .i-clock .right-p {
+          font-size: 13px;
+          color: #A6ADB4;
+          font-family: 'Montserrat';
+          font-weight: 500;
+          font-style: italic; }
+
+.container-wraper {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto; }
+  .container-wraper .title-h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 40px;
     margin-bottom: 40px;
     margin-left: 40px; }
-    .container .title-h3 .text-h2 {
+    .container-wraper .title-h3 .text-h2 {
       font-size: 24px;
       color: #202124;
       text-transform: uppercase;
       font-family: 'Montserrat';
       font-weight: bold; }
-    .container .title-h3 .arrow .left-arrow {
+      @media screen and (max-width: 497px) {
+        .container-wraper .title-h3 .text-h2 {
+          font-size: 18px; } }
+    .container-wraper .title-h3 .arrow .left-arrow {
       font-size: 10px;
       color: #707070;
       cursor: pointer;
       margin-right: 20px; }
-      .container .title-h3 .arrow .left-arrow:hover {
+      .container-wraper .title-h3 .arrow .left-arrow:hover {
         transform: scale(1.05); }
-    .container .title-h3 .arrow .right-arrow {
+    .container-wraper .title-h3 .arrow .right-arrow {
       font-size: 10px;
       color: #202124;
       cursor: pointer; }
-      .container .title-h3 .arrow .right-arrow:hover {
+      .container-wraper .title-h3 .arrow .right-arrow:hover {
         transform: scale(1.05); }
-  .container .left-box {
-    max-width: 55%;
-    width: 100%;
-    position: relative;
-    margin-top: 40px; }
-    .container .left-box .img-4 {
+  .container-wraper .section-section3 {
+    display: flex; }
+    @media screen and (max-width: 880px) {
+      .container-wraper .section-section3 {
+        flex-direction: column; } }
+    .container-wraper .section-section3 .left-box {
+      max-width: 760px;
       width: 100%;
-      height: 100%; }
-    .container .left-box .section-3 {
-      position: absolute;
-      width: 40%;
-      height: 100%; }
-      .container .left-box .section-3 .test-h4 {
+      padding-left: 40px; }
+      .container-wraper .section-section3 .left-box .img-class {
+        position: absolute;
+        max-width: 760px;
+        width: 100%; }
+        @media screen and (max-width: 1120px) {
+          .container-wraper .section-section3 .left-box .img-class {
+            max-width: 740px;
+            width: 100%; } }
+        @media screen and (max-width: 1090px) {
+          .container-wraper .section-section3 .left-box .img-class {
+            max-width: 700px;
+            width: 100%; } }
+        @media screen and (max-width: 1060px) {
+          .container-wraper .section-section3 .left-box .img-class {
+            max-width: 660px;
+            width: 100%; } }
+        @media screen and (max-width: 1030px) {
+          .container-wraper .section-section3 .left-box .img-class {
+            max-width: 620px;
+            width: 100%; } }
+        @media screen and (max-width: 900px) {
+          .container-wraper .section-section3 .left-box .img-class {
+            max-width: 580px;
+            width: 100%; } }
+        @media screen and (max-width: 880px) {
+          .container-wraper .section-section3 .left-box .img-class {
+            max-width: 780px;
+            width: 100%; } }
+        @media screen and (max-width: 840px) {
+          .container-wraper .section-section3 .left-box .img-class {
+            max-width: 750px;
+            width: 100%; } }
+        @media screen and (max-width: 810px) {
+          .container-wraper .section-section3 .left-box .img-class {
+            max-width: 720px;
+            width: 100%; } }
+        @media screen and (max-width: 780px) {
+          .container-wraper .section-section3 .left-box .img-class {
+            max-width: 608px;
+            width: 100%; } }
+        @media screen and (max-width: 768px) {
+          .container-wraper .section-section3 .left-box .img-class {
+            max-width: 608px;
+            width: 100%; } }
+        @media screen and (max-width: 667px) {
+          .container-wraper .section-section3 .left-box .img-class {
+            max-width: 500px;
+            width: 100%; } }
+        @media screen and (max-width: 558px) {
+          .container-wraper .section-section3 .left-box .img-class {
+            max-width: 450px; } }
+        @media screen and (max-width: 508px) {
+          .container-wraper .section-section3 .left-box .img-class {
+            max-width: 400px; } }
+        @media screen and (max-width: 497px) {
+          .container-wraper .section-section3 .left-box .img-class {
+            max-width: 300px;
+            height: 200px; } }
+        @media screen and (max-width: 370px) {
+          .container-wraper .section-section3 .left-box .img-class {
+            max-width: 240px; } }
+        .container-wraper .section-section3 .left-box .img-class .img-4 {
+          width: 100%;
+          height: 100%; }
+          @media screen and (max-width: 370px) {
+            .container-wraper .section-section3 .left-box .img-class .img-4 {
+              height: 200px; } }
+      .container-wraper .section-section3 .left-box .section-3 {
+        position: relative;
+        width: 40%;
+        z-index: 999999999999;
+        padding-left: 40px; }
+        @media screen and (max-width: 667px) {
+          .container-wraper .section-section3 .left-box .section-3 {
+            width: 30%; } }
+        .container-wraper .section-section3 .left-box .section-3 .test-h4 {
+          font-size: 16px;
+          color: #fff;
+          font-weight: 600;
+          font-family: 'Montserrat';
+          padding-top: 40px;
+          text-transform: uppercase; }
+          @media screen and (max-width: 800px) {
+            .container-wraper .section-section3 .left-box .section-3 .test-h4 {
+              padding-top: 10px; } }
+          @media screen and (max-width: 768px) {
+            .container-wraper .section-section3 .left-box .section-3 .test-h4 {
+              padding-top: 10px; } }
+          @media screen and (max-width: 667px) {
+            .container-wraper .section-section3 .left-box .section-3 .test-h4 {
+              font-size: 14px; } }
+          @media screen and (max-width: 508px) {
+            .container-wraper .section-section3 .left-box .section-3 .test-h4 {
+              font-size: 11px; } }
+          @media screen and (max-width: 497px) {
+            .container-wraper .section-section3 .left-box .section-3 .test-h4 {
+              font-size: 7px; } }
+        .container-wraper .section-section3 .left-box .section-3 .test-class {
+          padding-top: 70%; }
+          @media screen and (max-width: 1020px) {
+            .container-wraper .section-section3 .left-box .section-3 .test-class {
+              padding-top: 50%; } }
+          @media screen and (max-width: 880px) {
+            .container-wraper .section-section3 .left-box .section-3 .test-class {
+              padding-top: 70%; } }
+          @media screen and (max-width: 667px) {
+            .container-wraper .section-section3 .left-box .section-3 .test-class {
+              padding-top: 50%; } }
+          @media screen and (max-width: 497px) {
+            .container-wraper .section-section3 .left-box .section-3 .test-class {
+              padding-top: 20%; } }
+          .container-wraper .section-section3 .left-box .section-3 .test-class .test-h3 {
+            font-size: 24px;
+            font-family: 'Montserrat';
+            color: #fff;
+            font-weight: 600;
+            text-transform: inherit;
+            font-weight: 400;
+            line-height: 20px;
+            margin-bottom: 40px; }
+            @media screen and (max-width: 1000px) {
+              .container-wraper .section-section3 .left-box .section-3 .test-class .test-h3 {
+                font-size: 20px;
+                margin-bottom: 0; } }
+            @media screen and (max-width: 880px) {
+              .container-wraper .section-section3 .left-box .section-3 .test-class .test-h3 {
+                font-size: 24px;
+                margin-bottom: 40px; } }
+            @media screen and (max-width: 768px) {
+              .container-wraper .section-section3 .left-box .section-3 .test-class .test-h3 {
+                font-size: 24px;
+                margin-bottom: 40px; } }
+            @media screen and (max-width: 667px) {
+              .container-wraper .section-section3 .left-box .section-3 .test-class .test-h3 {
+                font-size: 16px; } }
+            @media screen and (max-width: 508px) {
+              .container-wraper .section-section3 .left-box .section-3 .test-class .test-h3 {
+                font-size: 12px; } }
+            @media screen and (max-width: 497px) {
+              .container-wraper .section-section3 .left-box .section-3 .test-class .test-h3 {
+                font-size: 7px; } }
+          .container-wraper .section-section3 .left-box .section-3 .test-class .test-p {
+            font-size: 16px;
+            color: #fff;
+            text-transform: inherit;
+            font-family: 'Montserrat';
+            font-weight: 400;
+            line-height: 20px;
+            width: 680px;
+            margin-bottom: 10px; }
+            @media screen and (max-width: 1050px) {
+              .container-wraper .section-section3 .left-box .section-3 .test-class .test-p {
+                width: 620px; } }
+            @media screen and (max-width: 1030px) {
+              .container-wraper .section-section3 .left-box .section-3 .test-class .test-p {
+                font-size: 13px;
+                width: 450px; } }
+            @media screen and (max-width: 880px) {
+              .container-wraper .section-section3 .left-box .section-3 .test-class .test-p {
+                font-size: 16px;
+                width: 680px; } }
+            @media screen and (max-width: 780px) {
+              .container-wraper .section-section3 .left-box .section-3 .test-class .test-p {
+                width: 590px; } }
+            @media screen and (max-width: 768px) {
+              .container-wraper .section-section3 .left-box .section-3 .test-class .test-p {
+                font-size: 16px;
+                width: 500px; } }
+            @media screen and (max-width: 667px) {
+              .container-wraper .section-section3 .left-box .section-3 .test-class .test-p {
+                font-size: 13px;
+                width: 400px; } }
+            @media screen and (max-width: 508px) {
+              .container-wraper .section-section3 .left-box .section-3 .test-class .test-p {
+                width: 300px;
+                font-size: 8px; } }
+            @media screen and (max-width: 497px) {
+              .container-wraper .section-section3 .left-box .section-3 .test-class .test-p {
+                width: 240px;
+                font-size: 6px; } }
+            @media screen and (max-width: 370px) {
+              .container-wraper .section-section3 .left-box .section-3 .test-class .test-p {
+                width: 200px;
+                font-size: 4px; } }
+          .container-wraper .section-section3 .left-box .section-3 .test-class .i-clock {
+            display: flex;
+            margin-bottom: 40px; }
+            .container-wraper .section-section3 .left-box .section-3 .test-class .i-clock .clock {
+              font-size: 13px;
+              color: #fff;
+              margin-right: 10px; }
+              @media screen and (max-width: 667px) {
+                .container-wraper .section-section3 .left-box .section-3 .test-class .i-clock .clock {
+                  font-size: 4px; } }
+              @media screen and (max-width: 508px) {
+                .container-wraper .section-section3 .left-box .section-3 .test-class .i-clock .clock {
+                  font-size: 4px; } }
+            .container-wraper .section-section3 .left-box .section-3 .test-class .i-clock .right-p {
+              font-size: 13px;
+              color: #ffff;
+              font-family: 'Montserrat';
+              font-weight: 500;
+              font-style: italic; }
+              @media screen and (max-width: 667px) {
+                .container-wraper .section-section3 .left-box .section-3 .test-class .i-clock .right-p {
+                  font-size: 4px; } }
+              @media screen and (max-width: 508px) {
+                .container-wraper .section-section3 .left-box .section-3 .test-class .i-clock .right-p {
+                  font-size: 4px; } }
+      .container-wraper .section-section3 .left-box .img-class1 {
+        position: absolute;
+        margin-top: 80px;
+        max-width: 760px;
+        width: 100%; }
+        @media screen and (max-width: 1120px) {
+          .container-wraper .section-section3 .left-box .img-class1 {
+            max-width: 740px;
+            width: 100%; } }
+        @media screen and (max-width: 1090px) {
+          .container-wraper .section-section3 .left-box .img-class1 {
+            max-width: 700px;
+            width: 100%; } }
+        @media screen and (max-width: 1060px) {
+          .container-wraper .section-section3 .left-box .img-class1 {
+            max-width: 660px;
+            width: 100%; } }
+        @media screen and (max-width: 1030px) {
+          .container-wraper .section-section3 .left-box .img-class1 {
+            max-width: 620px;
+            width: 100%; } }
+        @media screen and (max-width: 900px) {
+          .container-wraper .section-section3 .left-box .img-class1 {
+            max-width: 580px;
+            width: 100%; } }
+        @media screen and (max-width: 880px) {
+          .container-wraper .section-section3 .left-box .img-class1 {
+            max-width: 780px;
+            width: 100%; } }
+        @media screen and (max-width: 840px) {
+          .container-wraper .section-section3 .left-box .img-class1 {
+            max-width: 750px;
+            width: 100%; } }
+        @media screen and (max-width: 810px) {
+          .container-wraper .section-section3 .left-box .img-class1 {
+            max-width: 720px;
+            width: 100%; } }
+        @media screen and (max-width: 780px) {
+          .container-wraper .section-section3 .left-box .img-class1 {
+            max-width: 608px;
+            width: 100%; } }
+        @media screen and (max-width: 768px) {
+          .container-wraper .section-section3 .left-box .img-class1 {
+            max-width: 608px;
+            width: 100%; } }
+        @media screen and (max-width: 667px) {
+          .container-wraper .section-section3 .left-box .img-class1 {
+            max-width: 500px; } }
+        @media screen and (max-width: 558px) {
+          .container-wraper .section-section3 .left-box .img-class1 {
+            max-width: 450px; } }
+        @media screen and (max-width: 508px) {
+          .container-wraper .section-section3 .left-box .img-class1 {
+            max-width: 400px; } }
+        @media screen and (max-width: 497px) {
+          .container-wraper .section-section3 .left-box .img-class1 {
+            max-width: 300px;
+            height: 200px; } }
+        @media screen and (max-width: 370px) {
+          .container-wraper .section-section3 .left-box .img-class1 {
+            max-width: 240px; } }
+        .container-wraper .section-section3 .left-box .img-class1 .img-5 {
+          width: 100%; }
+          @media screen and (max-width: 370px) {
+            .container-wraper .section-section3 .left-box .img-class1 .img-5 {
+              height: 200px; } }
+      .container-wraper .section-section3 .left-box .section1-3 {
+        position: relative;
+        width: 40%;
+        z-index: 999999999999;
+        padding-top: 80px;
+        padding-left: 40px; }
+        @media screen and (max-width: 840px) {
+          .container-wraper .section-section3 .left-box .section1-3 {
+            padding-top: 70px; } }
+        @media screen and (max-width: 667px) {
+          .container-wraper .section-section3 .left-box .section1-3 {
+            width: 30%; } }
+        .container-wraper .section-section3 .left-box .section1-3 .test1-h4 {
+          font-size: 16px;
+          color: #fff;
+          font-weight: 600;
+          font-family: 'Montserrat';
+          padding-top: 40px;
+          text-transform: uppercase; }
+          @media screen and (max-width: 800px) {
+            .container-wraper .section-section3 .left-box .section1-3 .test1-h4 {
+              padding-top: 10px; } }
+          @media screen and (max-width: 768px) {
+            .container-wraper .section-section3 .left-box .section1-3 .test1-h4 {
+              padding-top: 20px; } }
+          @media screen and (max-width: 667px) {
+            .container-wraper .section-section3 .left-box .section1-3 .test1-h4 {
+              font-size: 16px; } }
+          @media screen and (max-width: 508px) {
+            .container-wraper .section-section3 .left-box .section1-3 .test1-h4 {
+              font-size: 12px; } }
+          @media screen and (max-width: 497px) {
+            .container-wraper .section-section3 .left-box .section1-3 .test1-h4 {
+              font-size: 7px; } }
+        .container-wraper .section-section3 .left-box .section1-3 .test1-class {
+          padding-top: 70%; }
+          @media screen and (max-width: 1020px) {
+            .container-wraper .section-section3 .left-box .section1-3 .test1-class {
+              padding-top: 50%; } }
+          @media screen and (max-width: 880px) {
+            .container-wraper .section-section3 .left-box .section1-3 .test1-class {
+              padding-top: 70%; } }
+          @media screen and (max-width: 667px) {
+            .container-wraper .section-section3 .left-box .section1-3 .test1-class {
+              padding-top: 50%; } }
+          @media screen and (max-width: 508px) {
+            .container-wraper .section-section3 .left-box .section1-3 .test1-class {
+              padding-top: 20%; } }
+          .container-wraper .section-section3 .left-box .section1-3 .test1-class .test1-h3 {
+            font-size: 24px;
+            font-family: 'Montserrat';
+            color: #fff;
+            font-weight: 600;
+            text-transform: inherit;
+            font-weight: 400;
+            line-height: 20px;
+            margin-bottom: 40px; }
+            @media screen and (max-width: 1000px) {
+              .container-wraper .section-section3 .left-box .section1-3 .test1-class .test1-h3 {
+                font-size: 20px;
+                margin-bottom: 0; } }
+            @media screen and (max-width: 880px) {
+              .container-wraper .section-section3 .left-box .section1-3 .test1-class .test1-h3 {
+                font-size: 24px;
+                margin-bottom: 40px; } }
+            @media screen and (max-width: 768px) {
+              .container-wraper .section-section3 .left-box .section1-3 .test1-class .test1-h3 {
+                font-size: 24px;
+                margin-bottom: 40px; } }
+            @media screen and (max-width: 667px) {
+              .container-wraper .section-section3 .left-box .section1-3 .test1-class .test1-h3 {
+                font-size: 16px; } }
+            @media screen and (max-width: 508px) {
+              .container-wraper .section-section3 .left-box .section1-3 .test1-class .test1-h3 {
+                font-size: 12px; } }
+            @media screen and (max-width: 497px) {
+              .container-wraper .section-section3 .left-box .section1-3 .test1-class .test1-h3 {
+                font-size: 5px; } }
+          .container-wraper .section-section3 .left-box .section1-3 .test1-class .test1-p {
+            font-size: 16px;
+            color: #fff;
+            text-transform: inherit;
+            font-family: 'Montserrat';
+            font-weight: 400;
+            line-height: 20px;
+            width: 680px;
+            margin-bottom: 10px; }
+            @media screen and (max-width: 1050px) {
+              .container-wraper .section-section3 .left-box .section1-3 .test1-class .test1-p {
+                width: 620px; } }
+            @media screen and (max-width: 1030px) {
+              .container-wraper .section-section3 .left-box .section1-3 .test1-class .test1-p {
+                font-size: 13px;
+                width: 450px; } }
+            @media screen and (max-width: 880px) {
+              .container-wraper .section-section3 .left-box .section1-3 .test1-class .test1-p {
+                font-size: 16px;
+                width: 680px; } }
+            @media screen and (max-width: 780px) {
+              .container-wraper .section-section3 .left-box .section1-3 .test1-class .test1-p {
+                width: 590px; } }
+            @media screen and (max-width: 768px) {
+              .container-wraper .section-section3 .left-box .section1-3 .test1-class .test1-p {
+                font-size: 16px;
+                width: 500px; } }
+            @media screen and (max-width: 667px) {
+              .container-wraper .section-section3 .left-box .section1-3 .test1-class .test1-p {
+                font-size: 13px;
+                width: 400px; } }
+            @media screen and (max-width: 508px) {
+              .container-wraper .section-section3 .left-box .section1-3 .test1-class .test1-p {
+                width: 300px;
+                font-size: 8px; } }
+            @media screen and (max-width: 497px) {
+              .container-wraper .section-section3 .left-box .section1-3 .test1-class .test1-p {
+                width: 240px;
+                font-size: 6px; } }
+            @media screen and (max-width: 370px) {
+              .container-wraper .section-section3 .left-box .section1-3 .test1-class .test1-p {
+                width: 200px;
+                font-size: 4px; } }
+          .container-wraper .section-section3 .left-box .section1-3 .test1-class .i-clock {
+            display: flex;
+            margin-bottom: 40px; }
+            .container-wraper .section-section3 .left-box .section1-3 .test1-class .i-clock .clock {
+              font-size: 13px;
+              color: #fff;
+              margin-right: 10px; }
+              @media screen and (max-width: 667px) {
+                .container-wraper .section-section3 .left-box .section1-3 .test1-class .i-clock .clock {
+                  font-size: 10px; } }
+              @media screen and (max-width: 508px) {
+                .container-wraper .section-section3 .left-box .section1-3 .test1-class .i-clock .clock {
+                  font-size: 4px; } }
+            .container-wraper .section-section3 .left-box .section1-3 .test1-class .i-clock .right-p {
+              font-size: 13px;
+              color: #ffff;
+              font-family: 'Montserrat';
+              font-weight: 500;
+              font-style: italic; }
+              @media screen and (max-width: 667px) {
+                .container-wraper .section-section3 .left-box .section1-3 .test1-class .i-clock .right-p {
+                  font-size: 10px; } }
+              @media screen and (max-width: 508px) {
+                .container-wraper .section-section3 .left-box .section1-3 .test1-class .i-clock .right-p {
+                  font-size: 4px; } }
+    .container-wraper .section-section3 .right-box {
+      max-width: 360px;
+      width: 100%;
+      margin-left: 60px; }
+      @media screen and (max-width: 1090px) {
+        .container-wraper .section-section3 .right-box {
+          max-width: 340px;
+          width: 100%;
+          margin-left: 50px; } }
+      @media screen and (max-width: 1040px) {
+        .container-wraper .section-section3 .right-box {
+          max-width: 320px;
+          width: 100%;
+          margin-left: 30px; } }
+      @media screen and (max-width: 1000px) {
+        .container-wraper .section-section3 .right-box {
+          max-width: 280px;
+          width: 100%;
+          margin-left: 20px; } }
+      @media screen and (max-width: 960px) {
+        .container-wraper .section-section3 .right-box {
+          max-width: 240px;
+          width: 100%;
+          margin-left: 10px; } }
+      @media screen and (max-width: 920px) {
+        .container-wraper .section-section3 .right-box {
+          max-width: 220px;
+          width: 100%;
+          margin-left: 5px; } }
+      @media screen and (max-width: 890px) {
+        .container-wraper .section-section3 .right-box {
+          max-width: 200px;
+          width: 100%;
+          margin-left: 0; } }
+      @media screen and (max-width: 880px) {
+        .container-wraper .section-section3 .right-box {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 80px 40px;
+          max-width: 780px;
+          width: 100%; } }
+      @media screen and (max-width: 840px) {
+        .container-wraper .section-section3 .right-box {
+          max-width: 750px;
+          width: 100%; } }
+      @media screen and (max-width: 810px) {
+        .container-wraper .section-section3 .right-box {
+          max-width: 720px;
+          width: 100%; } }
+      @media screen and (max-width: 780px) {
+        .container-wraper .section-section3 .right-box {
+          max-width: 610px;
+          width: 100%; } }
+      @media screen and (max-width: 670px) {
+        .container-wraper .section-section3 .right-box {
+          flex-direction: column;
+          align-items: flex-start;
+          margin-left: 40px;
+          max-width: 500px;
+          width: 100%; } }
+      @media screen and (max-width: 558px) {
+        .container-wraper .section-section3 .right-box {
+          max-width: 450px; } }
+      @media screen and (max-width: 508px) {
+        .container-wraper .section-section3 .right-box {
+          max-width: 400px; } }
+      @media screen and (max-width: 497px) {
+        .container-wraper .section-section3 .right-box {
+          max-width: 300px; } }
+      @media screen and (max-width: 370px) {
+        .container-wraper .section-section3 .right-box {
+          max-width: 240px; } }
+      @media screen and (max-width: 880px) {
+        .container-wraper .section-section3 .right-box .right-box1 {
+          margin-right: 40px; } }
+      @media screen and (max-width: 497px) {
+        .container-wraper .section-section3 .right-box .right-box1 {
+          margin-right: 0; } }
+      .container-wraper .section-section3 .right-box .right-box1 .img-6 {
+        width: 100%;
+        height: 100%; }
+      .container-wraper .section-section3 .right-box .right-box1 .box-h4 {
         font-size: 16px;
-        color: #fff;
-        font-weight: 600;
-        font-family: 'Montserrat'; }
+        font-family: 'Montserrat';
+        font-weight: bold;
+        color: #202124;
+        margin-top: 20px;
+        margin-bottom: 10px; }
+        @media screen and (max-width: 497px) {
+          .container-wraper .section-section3 .right-box .right-box1 .box-h4 {
+            font-size: 12px; } }
+      .container-wraper .section-section3 .right-box .right-box1 .i-clock {
+        display: flex;
+        margin-bottom: 40px; }
+        .container-wraper .section-section3 .right-box .right-box1 .i-clock .clock {
+          font-size: 13px;
+          color: #A6ADB4;
+          margin-right: 10px; }
+          @media screen and (max-width: 497px) {
+            .container-wraper .section-section3 .right-box .right-box1 .i-clock .clock {
+              font-size: 9px; } }
+        .container-wraper .section-section3 .right-box .right-box1 .i-clock .right-p {
+          font-size: 13px;
+          color: #A6ADB4;
+          font-family: 'Montserrat';
+          font-weight: 500;
+          font-style: italic; }
+          @media screen and (max-width: 497px) {
+            .container-wraper .section-section3 .right-box .right-box1 .i-clock .right-p {
+              font-size: 9px; } }
+      .container-wraper .section-section3 .right-box .right-box2 .img-7 {
+        width: 100%;
+        height: 100%; }
+      .container-wraper .section-section3 .right-box .right-box2 .box-h4 {
+        font-size: 16px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        color: #202124;
+        margin-top: 20px;
+        margin-bottom: 10px; }
+        @media screen and (max-width: 497px) {
+          .container-wraper .section-section3 .right-box .right-box2 .box-h4 {
+            font-size: 12px; } }
+      .container-wraper .section-section3 .right-box .right-box2 .i-clock {
+        display: flex;
+        margin-bottom: 40px; }
+        .container-wraper .section-section3 .right-box .right-box2 .i-clock .clock {
+          font-size: 13px;
+          color: #A6ADB4;
+          margin-right: 10px; }
+          @media screen and (max-width: 497px) {
+            .container-wraper .section-section3 .right-box .right-box2 .i-clock .clock {
+              font-size: 9px; } }
+        .container-wraper .section-section3 .right-box .right-box2 .i-clock .right-p {
+          font-size: 13px;
+          color: #A6ADB4;
+          font-family: 'Montserrat';
+          font-weight: 500;
+          font-style: italic; }
+          @media screen and (max-width: 497px) {
+            .container-wraper .section-section3 .right-box .right-box2 .i-clock .right-p {
+              font-size: 9px; } }
+      @media screen and (max-width: 880px) {
+        .container-wraper .section-section3 .right-box .right-box3 {
+          display: none; } }
+      @media screen and (max-width: 670px) {
+        .container-wraper .section-section3 .right-box .right-box3 {
+          display: block; } }
+      .container-wraper .section-section3 .right-box .right-box3 .img-8 {
+        width: 100%;
+        height: 100%; }
+      .container-wraper .section-section3 .right-box .right-box3 .box-h4 {
+        font-size: 16px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        color: #202124;
+        margin-top: 20px;
+        margin-bottom: 10px; }
+        @media screen and (max-width: 497px) {
+          .container-wraper .section-section3 .right-box .right-box3 .box-h4 {
+            font-size: 12px; } }
+      .container-wraper .section-section3 .right-box .right-box3 .i-clock {
+        display: flex;
+        margin-bottom: 40px; }
+        .container-wraper .section-section3 .right-box .right-box3 .i-clock .clock {
+          font-size: 13px;
+          color: #A6ADB4;
+          margin-right: 10px; }
+          @media screen and (max-width: 497px) {
+            .container-wraper .section-section3 .right-box .right-box3 .i-clock .clock {
+              font-size: 9px; } }
+        .container-wraper .section-section3 .right-box .right-box3 .i-clock .right-p {
+          font-size: 13px;
+          color: #A6ADB4;
+          font-family: 'Montserrat';
+          font-weight: 500;
+          font-style: italic; }
+          @media screen and (max-width: 497px) {
+            .container-wraper .section-section3 .right-box .right-box3 .i-clock .right-p {
+              font-size: 9px; } }

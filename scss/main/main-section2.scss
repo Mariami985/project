@@ -1,13 +1,7 @@
-.container{
+.section-wraper{
 max-width:1180px;
 width:100%;
-    .section2{
-        max-width:1160px;
-        width:100%;
-        margin:0 auto;
-        @media screen and (max-width:768px){
-            padding-top: 50%;
-        }
+margin:0 auto;
             .title-h2{
                 display:flex;
                 justify-content: space-between;
@@ -20,6 +14,9 @@ width:100%;
                         text-transform: uppercase;
                         font-family: 'Montserrat';
                         font-weight: bold;
+                        @media screen and (max-width:420px){
+                            font-size:20px;
+                         }
                     }
                     .arrow{
                         .left-arrow{
@@ -46,14 +43,15 @@ width:100%;
                 display:flex;
                 justify-content: space-between;
                 align-items: center;
+                @media screen and (max-width:670px){
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
                     .box1{
                         max-width:360px;
                         width:100%;
                         border-radius: 6px;
                         margin-left:40px;
-                        &:hover{
-                            transform: scale(1.05);
-                        }
                         @media screen and (max-width:1090px){
                             max-width:320px;
                             width:100%;
@@ -79,9 +77,24 @@ width:100%;
                             width:100%;
                             margin-left: 40px;
                         }
+                        @media screen and (max-width:420px){
+                            width:85%;
+                        }
                             .img1{
                                 width:100%;
+                                transition: all .2s;
                                 height: 100%;
+                                &:hover{
+                                    transform: scale(1.05);
+                                }
+                                cursor: pointer;
+                                @media screen and (max-width:420px){
+                                    &:hover{
+                                        transform: scale(0.9);
+                                    }
+                                transition: all .2s;
+                                cursor: pointer;
+                                }
                             }
                             .title-h4{
                                 font-size:16px;
@@ -91,6 +104,10 @@ width:100%;
                                 font-family: 'Montserrat';
                                 margin-top:40px;
                                 margin-bottom: 10px;
+                                &:hover{
+                                    transform: scale(1.05);
+                                }
+                                cursor: pointer;
                             
                             @media screen and (max-width:950px){
                                 font-size:14px;
@@ -101,6 +118,14 @@ width:100%;
                             @media screen and(max-width:768px){
                                 font-size:16px;
                             }
+                            @media screen and (max-width:420px){
+                                font-size:14px;
+                                &:hover{
+                                    transform: scale(0.9);
+                                }
+                            transition: all .2s;
+                            cursor: pointer;
+                             }
                         }
                             .title-p{
                                 font-size:13px;
@@ -110,6 +135,10 @@ width:100%;
                                 font-family: 'Montserrat';
                                 font-style: italic;
                                 margin-bottom: 10px;
+                                &:hover{
+                                    transform: scale(1.05);
+                                }
+                                cursor: pointer;
                             
                             @media screen and (max-width:950px){
                                 font-size:11px;
@@ -120,6 +149,14 @@ width:100%;
                             @media screen and(max-width:768px){
                                 font-size:13px;
                             }
+                            @media screen and (max-width:420px){
+                                font-size:11px;
+                                &:hover{
+                                    transform: scale(0.9);
+                                }
+                            transition: all .2s;
+                            cursor: pointer;
+                             }
                         }
                             .i-clock{
                                 display:flex;
@@ -144,9 +181,6 @@ width:100%;
                         width:100%;
                         border-radius: 6px;
                         margin-left:40px;
-                        &:hover{
-                            transform: scale(1.05);
-                        }
                         @media screen and (max-width:1090px){
                             max-width:320px;
                             width:100%;
@@ -172,9 +206,24 @@ width:100%;
                             width:100%;
                             margin-left: 40px;
                         }
+                        @media screen and (max-width:420px){
+                            width:85%;
+                        }
                             .img1{
                                 width:100%;
                                 height: 100%;
+                                &:hover{
+                                    transform: scale(1.05);
+                                }
+                                transition: all .2s;
+                                cursor: pointer;
+                                @media screen and (max-width:420px){
+                                    &:hover{
+                                        transform: scale(0.9);
+                                    }
+                                transition: all .2s;
+                                cursor: pointer;
+                                }
                             }
                             .title-h4{
                                 font-size:16px;
@@ -184,6 +233,10 @@ width:100%;
                                 font-family: 'Montserrat';
                                 margin-top:40px;
                                 margin-bottom: 10px;
+                                &:hover{
+                                    transform: scale(1.05);
+                                }
+                                cursor: pointer;
                             
                             @media screen and (max-width:950px){
                                 font-size:14px;
@@ -194,6 +247,14 @@ width:100%;
                             @media screen and(max-width:768px){
                                 font-size:16px;
                             }
+                            @media screen and (max-width:420px){
+                               font-size:14px;
+                                &:hover{
+                                    transform: scale(0.9);
+                                }
+                            transition: all .2s;
+                            cursor: pointer;
+                            }
                         }
                             .title-p{
                                 font-size:13px;
@@ -203,6 +264,10 @@ width:100%;
                                 font-family: 'Montserrat';
                                 font-style: italic;
                                 margin-bottom: 10px;
+                                &:hover{
+                                    transform: scale(1.05);
+                                }
+                                cursor: pointer;
                                 @media screen and (max-width:950px){
                                     font-size:11px;
                                 }
@@ -212,6 +277,14 @@ width:100%;
                                 @media screen and(max-width:768px){
                                     font-size:13px;
                                 }
+                                @media screen and (max-width:420px){
+                                    font-size:11px;
+                                    &:hover{
+                                        transform: scale(0.9);
+                                    }
+                                transition: all .2s;
+                                cursor: pointer;
+                                 }
                             }
                             .i-clock{
                                 display:flex;
@@ -236,9 +309,6 @@ width:100%;
                         width:100%;
                         border-radius: 6px;
                         margin-left:40px;
-                        &:hover{
-                            transform: scale(1.05);
-                        }
                         @media screen and (max-width:1090px){
                             max-width:320px;
                             width:100%;
@@ -265,6 +335,11 @@ width:100%;
                             .img1{
                                 width:100%;
                                 height: 100%;
+                                &:hover{
+                                    transform: scale(1.05);
+                                }
+                                transition: all .2s;
+                                cursor: pointer;
                             }
                             .title-h4{
                                 font-size:16px;
@@ -274,6 +349,10 @@ width:100%;
                                 font-family: 'Montserrat';
                                 margin-top:40px;
                                 margin-bottom: 10px;
+                                &:hover{
+                                    transform: scale(1.05);
+                                }
+                                cursor: pointer;
                             
                             @media screen and (max-width:950px){
                                 font-size:14px;
@@ -293,7 +372,10 @@ width:100%;
                                 font-family: 'Montserrat';
                                 font-style: italic;
                                 margin-bottom: 10px;
-                            
+                                &:hover{
+                                    transform: scale(1.05);
+                                }
+                                cursor: pointer;
                             @media screen and (max-width:950px){
                                 font-size:11px;
                             }
@@ -323,5 +405,4 @@ width:100%;
                     }
                     }
             }
-    }
 }
