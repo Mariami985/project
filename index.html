@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Project</title>
+    <meta name="description" content="project">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="M.Bregvadze">
     <script src="https://kit.fontawesome.com/7bd060919f.js" 
     crossorigin="anonymous"></script>
+    <link href="contact.html">
     <link rel="stylesheet" href="styles/style.css">
+    <title>First Project</title>
+    
 </head>
     <!-- header -->
     <header class="header-container">
@@ -24,17 +29,17 @@
                             </a>
                     </li>
                     <li class="nav-li">
-                        <a class="nav-a" href="#">
+                        <a class="nav-a" href="index.html#section-02">
                         DISCOVERY
                         </a>
                     </li>
                     <li class="nav-li">
-                        <a class="nav-a" href="#">
+                        <a class="nav-a" href="index.html#section-03">
                         PHOTOS
                         </a>
                     </li>
                     <li class="nav-li">
-                        <a class="nav-a" href="#">
+                        <a class="nav-a" href="contact.html">
                         CONTACT
                         </a>
                     </li>
@@ -45,7 +50,7 @@
         </div>
     </header>
     <!-- section1 -->
-    <section class="section-container">
+    <section class="section-container" id="section-01">
     <div class="section-container1">
             <img class="bn-img" src="img/bn-img.jpg" alt="bn-img">
         </div>
@@ -118,7 +123,7 @@
         </div>
     </section>
     <!-- section2 -->
-    <section class="section-wraper">
+    <section class="section-wraper" id="section-02">
             <div class="title-h2">
                 <h2 class="text-h2">TRENDING</h2>
                 <div class="arrow">
@@ -174,7 +179,7 @@
             </div>
     </section> 
     <!-- section3 -->
-    <section class="container-wraper">
+    <section class="container-wraper" id="section-03">
             <div class="title-h3">
                 <h2 class="text-h2">HAPPENING NOW</h2>
                 <div class="arrow">
@@ -229,7 +234,7 @@
             </div>
                 <div class="right-box">
                     <div class="right-box1">
-                        <img class="img-6" src="img/img-6.jpg" alt="img-6">
+                        <img class="img-6" src="img/img-6.png" alt="img-6">
                         <h4 class="box-h4">
                             Small title
                         </h4>
@@ -261,10 +266,79 @@
                         </div>
 
                     </div>
-
-
                 </div>
             </div>
         </section> 
+        <footer class="footer-section">
+            <div class="footer-wraper"> 
+                <div class="second-nav-box">
+                    <a class="footer-logo" href="index.html" alt="logo2">Logo</a>
+                    <ul class="footer-ul">
+                        <li class="footer-li">
+                            <a class="footer-a" href="#">Home</a>
+                        </li>
+                        <li class="footer-li">
+                            <a class="footer-a" href="#section1">Discovery</a>
+                        </li>
+                        <li class="footer-li">
+                            <a class="footer-a" href="#">Photos</a>
+                        </li>
+                        <li class="footer-li">
+                            <a class="footer-a" href="#">Contact</a>
+                        </li>
+                    </ul>
+
+                    <ul class="second-ul">
+                        <li class="second-li">
+                            <a class="second-a" href="#">About</a>
+                        </li>
+                        <li class="second-li">
+                            <a class="second-a" href="#">Help</a>
+                        </li>
+                        <li class="second-li">
+                            <a class="second-a" href="#">Terms</a>
+                        </li>
+                        <li class="second-li">
+                            <a class="second-a" href="#">Guidlines</a>
+                        </li>
+                    </ul>
+
+                    <ul class="therd-ul">
+                        <li class="therd-li">
+                            <a class="therd-a" href="#">Testimotails</a>
+                        </li>
+                        <li class="therd-li">
+                            <a class="therd-a" href="#">Advertise</a>
+                        </li>
+                        <li class="therd-li">
+                            <a class="therd-a" href="#">Intergrations</a>
+                        </li>
+                        <li class="therd-li">
+                            <a class="therd-a" href="#">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="form-wraper">
+                    <form class="form" action="#">
+                        <label for="email" id="email"></label>
+                        <input class="input-first" type="email" name="email" id="email" placeholder="Email">
+                        <i class="fas fa-location-arrow"></i>
+                    </form>
+                    <p class="form-p">
+                        Stay in touch with us for the freshest products!
+                    </p>
+                </div>
+                <div class="social-icon">
+                    <a class="social-i" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a class="social-t" href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                    <a class="social-f" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social-a"
+                        href="https://www.google.com/maps/place/United+States/@37.2755783,-104.6571311,5z/data=!3m1!4b1!4m5!3m4!1s0x54eab584e432360b:0x1c3bb99243deb742!8m2!3d37.09024!4d-95.712891">
+                        <i class="fas fa-globe-americas"></i></a>
+    
+                </div>
+            </div>
+
+        </footer>
 </body>
 </html>

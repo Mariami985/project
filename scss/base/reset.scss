@@ -45,3 +45,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     html {
       scroll-behavior: smooth;
     }
+    button,input{
+      outline: none;
+      border: 0;
+    }
+    img{
+      display: block;
+    }

@@ -1,0 +1,94 @@
+.header-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-container .container1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  position: fixed;
+  background-color: #F6F8F9;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 9999999999999999;
+}
+
+.header-container .container1 .logo {
+  font-size: 13px;
+  color: #FA6980;
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+
+.header-container .container1 .logo:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.header-container .container1 .nav-img {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-container .container1 .nav-img .navigation .nav-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-container .container1 .nav-img .navigation .nav-ul {
+    display: none;
+  }
+}
+
+.header-container .container1 .nav-img .navigation .nav-ul .nav-li .nav-a {
+  font-size: 11px;
+  color: #343638;
+  text-transform: uppercase;
+  margin-top: 19px;
+  margin-left: 27px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  -webkit-transition: all, 0.5s, linear, 0.5s;
+  transition: all, 0.5s, linear, 0.5s;
+}
+
+.header-container .container1 .nav-img .navigation .nav-ul .nav-li .nav-a:hover {
+  color: #FA6980;
+}
+
+.header-container .container1 .nav-img .img1 {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.header-container .container1 .nav-img .img1:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+/*# sourceMappingURL=main.css.map */
