@@ -1,0 +1,254 @@
+.footer-section{
+    background-color: #87959e;
+    margin-top:100px;
+     .footer-wraper{
+         @extend %container;
+         display:flex;
+         justify-content: space-between;
+         padding-top: 56px;
+         padding-bottom: 60px;
+            @media screen and(max-width:768px) {
+                flex-wrap: wrap;
+            }
+            @media screen and(max-width:410px) {
+                flex-direction: column;
+                align-items: center;
+            }
+          .second-nav-box{
+              max-width:379px;
+              width:100%;
+              display:flex;
+              justify-content: space-between; 
+                @media screen and(max-width:900px) {
+                    max-width:350px;
+                }
+                @media screen and(max-width:768px) {
+                    max-width:500px;
+                    margin-bottom:50px;
+                }
+                @media screen and(max-width:410px) {
+                    max-width:480px;
+                    margin-bottom: 50px;
+                }
+                @media screen and(max-width:340px) {
+                    max-width:350px;
+                    margin-bottom: 50px;
+                }
+               .footer-logo{
+                font-family: 'Montserrat';
+                font-size: 13px;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: #fff;
+                transition: all 0.5s;
+                 &:hover{
+                    transition: all 0.5s;
+                    color:  #FA6980;
+                 }
+                 
+               }
+               .footer-ul{
+                font-family: 'Montserrat';
+                font-size:13px;
+                text-transform: uppercase;
+                    @media screen and(max-width:340px) {
+                        font-size: 11px;
+                    }
+                 .footer-li{
+                     margin-top:8px;
+                     transition: all 0.5s;
+                     &:first-child{
+                         margin-top: 0;
+                     }
+                     .footer-a{
+                        color: #CBD0D3;
+                        font-weight: bold;
+                        &:hover{
+                            color:black;
+                            transition: all 0.5s;
+                        }
+                    }
+                 }
+               }
+               .second-ul{
+                font-family: 'Montserrat';
+                font-size:13px;
+                color: #CBD0D3;
+                text-transform: uppercase;
+                    @media screen and(max-width:340px) {
+                        font-size: 11px;
+                    }
+                 .second-li{
+                     margin-top:8px;
+                     transition: all 0.5s;
+                     &:first-child{
+                         margin-top: 0;
+                     }
+                      .second-a{
+                        color: #CBD0D3;
+                        font-weight: bold;
+                        &:hover{
+                            color:black;
+                            transition: all 0.5s;
+                        }
+                    }
+                 }
+
+               }
+               .therd-ul{
+                font-family: 'Montserrat';
+                font-size:13px;
+                color: #CBD0D3;
+                text-transform: uppercase;
+                    @media screen and(max-width:340px) {
+                        font-size: 11px;
+                    }
+                 .therd-li{
+                     margin-top:8px;
+                     transition: all 0.5s;
+                     &:first-child{
+                         margin-top: 0;
+                     }
+                     .therd-a{
+                        color: #CBD0D3;
+                        font-weight: bold;
+                        &:hover{
+                            color:black;
+                            transition: all 0.5s;
+                        }
+                    }
+                 }
+               }
+          }
+          .form-wraper{
+              max-width:262px;
+              width:100%;
+              @media screen and(max-width:900px) {
+                max-width:252px;
+            }
+               .form{
+                   width:100%;
+                   position:relative;
+                   height: 80%;
+                    .input-first{
+                        width:100%;
+                        height: 80%;
+                        border: 2px solid #CBD0D3;
+                        border-radius: 6px;
+                        background: #A6ADB4;
+                        padding-left: 20px;
+                        font-family: 'Montserrat';
+                        font-size: 13px;
+                        &::placeholder{
+                            font-family: 'Montserrat';
+                            font-size:13px;
+                            color: #CBD0D3;
+                        }
+
+                    }
+                    .fa-location-arrow{
+                        color:#fff;
+                        font-size:16px;
+                        position: absolute;
+                        top:11px;
+                        right: 19px;
+                        bottom: 11px;
+                        cursor: pointer;
+                        &:hover{
+                            color:black;
+                            transition: all 0.5s;
+                        }
+                            @media  screen and(max-width:410px) {
+                                top:5px;
+                                bottom: 6px;
+                                
+                            }
+                    }
+               }
+               .form-p{
+                font-family: 'Montserrat';
+                font-weight: bold;
+                font-size: 12px;
+                color: #CBD0D3;
+                margin-top:16px;
+               }
+          }
+          .social-icon{
+              max-width:160px;
+              width:100%;
+              display: flex;
+              justify-content: space-between;
+                @media screen and(max-width:900px) {
+                    max-width:150px;
+                }
+                @media screen and(max-width:768px) {
+                    align-items: flex-end;
+                }
+                @media screen and(max-width:410px) {
+                    margin-top: 50px;
+                    align-items: flex-end;
+                    max-width: 170px;
+                }
+                @media screen and(max-width:340px) {
+                    margin-top: 50px;
+                    align-items: flex-end;
+                    max-width: 170px;
+                }
+                
+
+               .social-i{
+                   max-width:20px;
+                   width:100%;
+                    .fa-instagram{
+                        color: #8b2c2c;
+                        font-size: 16px;
+                        transition: all 0.3s;
+                        &:hover{
+                            font-size: 20px;
+                            transition: all 0.3s;
+                        }
+                    }
+               }
+               .social-t{
+                max-width: 20px;
+                width: 100%;
+                .fa-twitter{
+                    color: #1a025a;
+                    font-size: 16px;
+                    transition: all 0.3s;
+                    &:hover{
+                        font-size: 20px;
+                        transition: all 0.3s;
+                    }
+                }
+               }
+               .social-f{
+                max-width: 20px;
+                width: 100%;
+                .fa-facebook-f{
+                    color: #17023a;
+                    font-size: 16px;
+                    transition: all 0.3s;
+                    &:hover{
+                        font-size: 20px;
+                        transition: all 0.3s;
+                    }
+                }
+               }
+               .social-a{
+                max-width: 20px;
+                width: 100%;
+                .fa-globe-americas{
+                    color: #012710;
+                    font-size: 16px;
+                    transition: all 0.3s;
+                    &:hover{
+                        font-size: 20px;
+                        transition: all 0.3s;
+                    }
+                }
+               }
+          }
+
+     }
+}
